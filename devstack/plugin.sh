@@ -6,17 +6,14 @@ function install_flask_dependencies {
     
     # venv creation
     if [[ ! -d "$APP_DIR/venv" ]]; then
-        echo "Creando l'ambiente virtuale..."
         python3 -m venv "$APP_DIR/venv"
     fi
 
     # venv activation
-    echo "Attivando l'ambiente virtuale..."
     source "$APP_DIR/venv/bin/activate"
 
     # install requirements
     if [[ -f "$APP_DIR/requirements.txt" ]]; then
-        echo "Installando le dipendenze da requirements.txt..."
         pip install -r "$APP_DIR/requirements.txt" || { echo "Failed to install dependencies"; exit 1; }
     else
         echo "requirements.txt not found!"
@@ -24,7 +21,6 @@ function install_flask_dependencies {
     fi
 
     # venv deactivation
-    echo "Disattivando l'ambiente virtuale..."
     deactivate
 }
 
