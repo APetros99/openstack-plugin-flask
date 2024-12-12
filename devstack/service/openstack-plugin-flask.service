@@ -1,0 +1,13 @@
+[Unit]
+Description=Openstack Plugin Flask
+After=network.target
+
+[Service]
+User=petros
+Type=simple
+WorkingDirectory=/opt/stack/OpenStack
+ExecStart=/opt/stack/OpenStack/app/venv/bin/python3 /opt/stack/OpenStack/app/app.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
