@@ -3,7 +3,7 @@ Description=Openstack Plugin Flask
 After=network.target
 
 [Service]
-User=stack
+User=petros
 Type=simple
 WorkingDirectory=/opt/stack/openstack-plugin-flask
 ExecStart=/opt/stack/openstack-plugin-flask/app/venv/bin/python3 /opt/stack/openstack-plugin-flask/app/app.py
