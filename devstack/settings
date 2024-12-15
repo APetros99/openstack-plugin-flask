@@ -3,7 +3,7 @@ enable_service openstack-plugin-flask
 define_plugin openstack-plugin-flask
 
 # used directories
-PLUGIN_DIR=opt/stack/openstack-plugin-flask
-APP_DIR=$PLUGIN_DIR/app
-SERVICE_DIR=$PLUGIN_DIR/devstack/service
+PLUGIN_DIR=/opt/stack/openstack-plugin-flask
+APP_DIR=/opt/stack/openstack-plugin-flask/app
+SERVICE_DIR=/opt/stack/openstack-plugin-flask/devstack/service
 SYSTEMD_DIR=/etc/systemd/system
