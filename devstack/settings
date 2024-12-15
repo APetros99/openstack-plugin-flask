@@ -1,5 +1,6 @@
 # settings openstack
 enable_service openstack-plugin-flask
+define_plugin openstack-plugin-flask
 
 # used directories
 PLUGIN_DIR=$DEST/openstack-plugin-flask
