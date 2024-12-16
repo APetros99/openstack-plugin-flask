@@ -16,7 +16,7 @@ Add this repository as an external plugin in your local.conf file by including t
 ```bash
 [[local|localrc]]
    ...
-enable_plugin openstack-plugin-flask https://github.com/simonaettari2606/openstack-plugin.flask.git main
+enable_plugin openstack-plugin-flask https://github.com/APetros99/openstack-plugin-flask.git main
 ```
 This will tell DevStack to fetch and enable the flask-openstack-plugin during the installation process.
 Some of you may need to add your host IP address.
