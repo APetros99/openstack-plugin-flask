@@ -36,7 +36,7 @@ You can visit the Flask application at:
 ```bash
 http://<devstack_host>:5234
 ```
-It will display a "Hello, Beautiful People!" message.
+It will display a "Hello, World!" message.
 
 This project includes code from the repository [simona2606/openstack-plugin-flask](https://github.com/simona2606/openstack-plugin-flask).  
 The original code has been modified to fit the context of the project.
